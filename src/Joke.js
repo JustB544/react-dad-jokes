@@ -3,10 +3,7 @@ import "./Joke.css";
 
 /** A single joke, along with vote up/down buttons. */
 
-class Joke extends Component {
-  render() {
-    const { id, vote, votes, text } = this.props;
-
+function Joke({id, vote, votes, text}) {
     return (
       <div className="Joke">
         <div className="Joke-votearea">
@@ -24,7 +21,6 @@ class Joke extends Component {
         <div className="Joke-text">{text}</div>
       </div>
     );
-  }
 }
 
 export default Joke;
